@@ -1,0 +1,724 @@
+
+Landing page....
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="landingCSS.css"> -->
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            outline: none;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Space Grotesk;
+            background-color: rgb(255, 255, 255); 
+            /* background: linear-gradient(#000,rgb(132, 248, 151)); */
+            overflow: hidden;
+        }
+        .wrapper{
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+        header{
+            padding: 50px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 15px;
+
+        }
+        header ul li a{
+            color: rgb(41, 39, 39);
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all ease 0.5s;
+        }
+        header ul li a:hover{
+            color:rgb(108, 179, 108) ;
+
+        }
+        header ul li a.btn{
+            display: inline-block;
+            width: 180px;
+            height: 60px;
+            line-height: 60px;
+            background-color: rgb(145, 236, 236);
+            text-align: center;
+            font-size: 18px;
+            border-radius: 50px;
+            transition: all ease 0.5s;
+        }
+        header ul li a.btn:hover{
+            background-color: rgb(89, 241, 147);
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 30px 120px 0;
+        }
+        .text{
+            width: 50%;
+            padding-right: 150px;
+
+        }
+        .text p{
+            font-size: 28px;
+            line-height: 45px;
+            color: rgb(57, 70, 63);
+        }
+        .text a{
+            position: relative;
+            display: inline-block;
+            font-size: 25px;
+            text-transform: uppercase;
+            color: rgb(58, 57, 57);
+            text-decoration: none;
+            padding: 18px 30px;
+            letter-spacing: 2px;
+            font-weight: 500;
+            margin-top: 12px;
+        }
+        .text a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            background-color: rgb(157, 236, 168);
+            z-index: -1;
+            transition: all ease 0.5s;
+        }
+        .text a:hover:before{
+            width: 100%;
+
+        }
+        .content img{
+            position: absolute;
+            /* top: 0; */
+            /* left:0; */
+            /* width: 100%; */
+            /* height: 100%; */
+            /* object-fit: cover; */
+        }   
+        .img{
+            position: relative;
+            width: 200px;
+            height: 500px;
+            /* background: radial-gradient(520px, rgb(143, 236, 143),transparent 50%); */
+            margin-top : -50px;
+            /* mix-blend-mode: screen; */
+        }
+        .text p span{
+            color: rgb(89 228 167);
+        }
+        .text h1 span{
+            color: rgb(89 228 167);
+        }
+        h1{
+            width: 0ch;
+            font-weight: 300;
+            font-size: 50px;    
+            overflow: hidden; 
+            white-space: nowrap;
+            animation: text 8s steps(22) infinite alternate; /* animation */
+            border-right: 3px solid black;
+        }
+        @keyframes text{
+            0%{
+                width: 0ch;
+            }
+            50%{
+                width: 21ch;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">home</a></li>
+                <li><a class="btn" href="#" >login</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="text">
+            <h1><span><u>Command</u> <u> line</u> <u> Interface</u></span></h1>
+            <p>
+                Abbreviated as CLI, a <span>Command Line Interface</span> connects a user to a computer program or operating system. Through the CLI, users interact with a system or application by typing in text<span> (commands)</span>. 
+                <span>
+                    login for detail info...
+                </span>
+            </p>
+            <a href="http://192.168.45.200:7882/Site/New%20Design%20Project_1/index_1.html" class="btn">Log in</a>
+        </div>
+    
+        <div class="img">
+            <div class="social-icon">
+                <img src="i1.png" alt="">
+                <img src="fb.png" alt="">
+                <img src="wh1.png" alt="">
+                <img src="red.png" alt="">
+                <img src="mes.png" alt="">
+                
+
+            </div>
+            <img src="12.jpg" alt="" id="pic">
+            
+            
+        </div>
+        <div class="wave"></div>
+    </div>
+</div>
+</body>
+</html>
+
+
+Login page 
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demo.css">
+
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="data">
+
+                <h2>
+                    now this is for experiment
+                </h2>
+                <div class="info">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, dolorem architecto. Eligendi, odit error labore similique quisquam ducimus repudiandae ad eaque voluptatem nihil iusto commodi amet praesentium quas accusantium consectetur hic. Ipsam velit sequi aspernatur quisquam ducimus ipsa blanditiis neque earum vel molestias nesciunt enim accusamus dolore iusto, voluptatibus iure quam impedit necessitatibus beatae. Magnam adipisci saepe, delectus optio voluptatem quasi corrupti soluta veniam amet expedita nulla autem! Dolores, quos voluptate. Quam soluta dicta officia libero magnam odit eveniet voluptatum? Non inventore optio praesentium ab esse, sed, assumenda beatae quo vel doloribus distinctio soluta earum cupiditate, sint eos corporis? Ad, aut impedit iste, ducimus, earum voluptas cum voluptatum nesciunt quasi labore quos. Quod voluptatum hic eligendi temporibus eveniet nesciunt, cumque aliquam magnam quibusdam qui. Quis rem architecto velit numquam officia, animi molestias expedita veritatis maiores suscipit et ipsum, at ducimus incidunt tempora adipisci quo? Ullam quos repudiandae, tempora beatae, a possimus magnam officiis similique reprehenderit, adipisci voluptatibus tempore nostrum cum tenetur error vero in alias iusto velit nam est facilis? Error iure sapiente, aliquid alias amet incidunt fugiat assumenda aliquam magni nemo eveniet earum, dolores maxime et eligendi itaque. Praesentium sed dolorum necessitatibus, eveniet delectus rerum sequi sapiente adipisci sit? Dignissimos odit deleniti rem reiciendis tenetur! Cupiditate, voluptatem, commodi inventore obcaecati ex quam aperiam officiis odio voluptatum pariatur fugit, similique expedita cum repudiandae. Nostrum facere, minima eos rerum error sed ipsa? Possimus, aliquam impedit voluptatibus magni ullam temporibus sit dicta consequatur numquam nostrum dolore harum saepe cupiditate at corrupti maxime pariatur! Blanditiis quisquam itaque iusto voluptatem omnis sint nobis veritatis dolore nesciunt praesentium alias ipsum, architecto tempora cupiditate? Provident dolorum delectus ipsum. Officiis tenetur nemo assumenda voluptatibus incidunt distinctio asperiores maxime vitae voluptates maiores, quas vel sed doloribus facere. Esse, molestiae aut! Recusandae explicabo quibusdam eum labore repellendus libero atque maxime commodi minima consectetur harum, ex quis exercitationem delectus fugit magnam. Consequuntur amet similique alias. Assumenda, cupiditate! Nostrum dolores aperiam inventore. Sapiente expedita ipsum, ex aliquam recusandae similique voluptatum, vero quaerat sequi nemo, voluptates sunt? Ducimus quidem ad iste quo reprehenderit corporis quis porro, cupiditate ipsam sequi dolorem laborum nesciunt mollitia explicabo nobis sed adipisci soluta consectetur voluptate quia facere voluptatibus quam! Odio facilis illo eos cumque debitis! Excepturi at debitis nemo, ducimus eligendi aspernatur repellat mollitia modi, quaerat error ipsam tenetur laudantium natus distinctio maxime inventore fuga, necessitatibus dolor a et? Libero minima qui accusamus, itaque vel soluta modi nesciunt eveniet reiciendis officia ullam possimus quia tempore voluptatibus optio consectetur pariatur. Incidunt, facilis quasi iste nemo quod possimus corporis mollitia voluptate error sapiente veniam dignissimos suscipit quisquam, similique asperiores placeat officiis corrupti? Tempora dolorem perferendis laboriosam eveniet voluptate vitae, aliquam dignissimos expedita tempore explicabo provident dolorum vero. Tempora nobis distinctio quos, dolorem consequatur, vitae recusandae mollitia minus voluptatem officia ipsum, rerum magni incidunt vero deleniti. Cumque iusto officiis voluptates, corrupti similique dolorem quae reprehenderit vero quo repudiandae natus ipsa ducimus doloribus. Iste vitae laudantium commodi soluta accusamus rerum deleniti mollitia, molestiae quas qui eum officiis amet distinctio debitis sequi.
+                    </p>
+                </div>
+        </div>
+    </div>
+    
+    <div class="img">
+        <img src="5.jpg" alt="">
+        
+    </div>
+    
+    
+</body>
+
+</html>
+ -->
+<!-- okay then isske upper ka apna walaa hai baki niche wala yt ka hai tho wo dekhte ab -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_1.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">CLI</a>
+        <ul>
+            <li><a href="#" class="active">home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">Registraction</a></li>
+
+        </ul>
+    </header>     
+        <form action="login.php" class="box" method="post">
+            <h1>login</h1>
+            <input type="text" name="username" placeholder="username">
+            <input type="password" name="password" placeholder="password">
+            <!-- <input type="submit" name="" value="Login"> -->
+            <input type="submit" name="" value="Login">
+        </form>
+</body>
+</html>
+
+
+
+Last page CLI
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="yt.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">CLI</a>
+        <ul>
+            <li><a href="#" class="active">home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </header>    
+    <section>
+        <!-- <img src="1.jpg" alt="" id="pic"> -->
+        <!-- <h2 id="text">Command Line Interface</h2> -->
+    </section>
+    <div class="sec" id="sec">
+        <h2>What command means?</h2>
+        <br>
+        <p>
+            1 : an order given Obey her command. 
+            <br>
+            2 : the authority, right, or power to command : control The troops are under my command. 
+            <br>
+            3 : the ability to control and use : mastery She has a good command of the language.
+
+        </p>
+        <br>
+        <h2>Command Line Input</h2>
+        <br>
+        <p>
+            CLI is a command line program that accepts text input to execute operating system functions.
+            <br>
+            In the 1960s, using only computer terminals, this was the only way to interact with computers.
+            <br>
+            In the 1970s an 1980s, command line input was commonly used by Unix systems and PC systems like MS-DOS and Apple DOS.
+            <br>
+            Today, with graphical user interfaces (GUI), most users never use command-line interfaces (CLI).
+            <br>
+            However, CLI is still used by software developers and system administrators to configure computers, install software, and access features that are not available in the graphical interface.
+        </p>
+        <br>
+        <h2>Examples</h2>
+        <br>
+        <p>
+            The software package manager npm uses command line input to install software:
+        </p>
+        <br>
+        <p>
+            eg.<code>
+                C:\>npm install mysoftware
+            </code>
+        </p>
+        <br>
+        <p>
+            You can navigate your folders (directories) with command line commands:
+        </p>
+        <br>
+        <code>C:\Users\myuser>cd .. </code><br><br>
+        <code>C:\Users\>cd ..</code><br><br>
+        <code> C:\></code><br><br>
+        <br>
+        <h2>Basic Linux CLI Commands</h2>
+        <br>
+        <div class="table-box">
+            <div class="table-row table-head">
+                <div class="table-cell">
+                    <p>Command</p>
+                </div>
+                <div class="table-cell">
+                    <p>Description</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>ls</p>
+                </div>
+                <div class="table-cell">
+                    <p>List the directory (folder) system.</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>cd pathname</p>
+                </div>
+                <div class="table-cell">
+                    <p>Change directory (folder) in the file system.</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>cd ..</p>
+                </div>
+                <div class="table-cell">
+                    <p>Move one level up (one folder) in the file system.</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>cp</p>
+                </div>
+                <div class="table-cell">
+                    <p>	Copy a file to another folder.</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>mv</p>
+                </div>
+                <div class="table-cell">
+                    <p>	Move a file to another folder.</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>mkdir</p>
+                </div>
+                <div class="table-cell">
+                    <p>	Creates a new directory (folder).</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>rmdir</p>
+                </div>
+                <div class="table-cell">
+                    <p>	Remove a directory (folder).</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>clear</p>
+                </div>
+                <div class="table-cell">
+                    <p>	Clears the CLI window.</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>exit</p>
+                </div>
+                <div class="table-cell">
+                    <p>	Closes the CLI window.</p>
+                </div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">
+                    <p>man command</p>
+                </div>
+                <div class="table-cell">
+                    <p>	Shows the manual for a given command.</p>
+                </div>
+            </div>
+            <br>
+            <h2>
+                Basic Windows CLI Commands
+            </h2>
+            <br>
+            <div class="table-box">
+                <div class="table-row table-head">
+                    <div class="table-cell">
+                        <p>Command</p>
+                    </div>
+                    <div class="table-cell">
+                        <p>Description</p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>dir</p>
+                    </div>
+                    <div class="table-cell">
+                        <p>	List the directory (folder) system.</p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>cd pathname</p>
+                    </div>
+                    <div class="table-cell">
+                        <p>	Change directory (folder) in the file system.</p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>cd \</p>
+                    </div>
+                    <div class="table-cell">
+                        <p>	Move to the root folder of the file system.</p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>cd ..</p>
+                    </div>
+                    <div class="table-cell">
+                        <p>Move one level up (one folder) in the file system.</p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>copy</p>
+                    </div>
+                    <div class="table-cell">
+                        <p>Copy a file to another folder.</p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>move</p>
+                    </div>
+                    <div class="table-cell">
+                        <p>Move a file to another folder.</p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>type filename</p>
+                    </div>
+                    <div class="table-cell">
+                        <p>Type a file.</p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>mkdir or md</p>
+                    </div>
+                    <div class="table-cell">
+                        <p>Creates a new directory (folder).</p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p> rmdir or rd</p>
+                    </div>
+                    <div class="table-cell">
+                        <p>Removes a directory (folder).</p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>cls</p>
+                    </div>
+                    <div class="table-cell">
+                        <p>Clears the CLI window.</p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>exit</p>
+                    </div>
+                    <div class="table-cell">
+                        <p>Closes the CLI window.</p>
+                    </div>
+                </div>
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>help command</p>
+                    </div>
+                    <div class="table-cell">
+                        <p>Shows the manual for a given command.</p>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <h2>
+                    DOS Commands Help
+                </h2>
+                <br>
+                <p>
+                    You can display all available commands with the help command:
+                </p>
+                <br>
+                <code>
+                    C:\Users\myuser>help
+                </code>
+                <br>
+                <br>
+                <table class="w3-black">
+                    <tbody><tr><td>ASSOC</td><td> Displays or modifies file extension associations.</td></tr>
+                    <tr><td>ATTRIB</td><td> Displays or changes file attributes.</td></tr>
+                    <tr><td>BREAK</td><td> Sets or clears extended CTRL+C checking.</td></tr>
+                    <tr><td>BCDEDIT</td><td> Sets properties in boot database to control boot loading.</td></tr>
+                    <tr><td>CACLS</td><td> Displays or modifies access control lists (ACLs) of files.</td></tr>
+                    <tr><td>CALL</td><td> Calls one batch program from another.</td></tr>
+                    <tr><td>CD</td><td> Displays the name of or changes the current directory.</td></tr>
+                    <tr><td>CHCP</td><td> Displays or sets the active code page number.</td></tr>
+                    <tr><td>CHDIR</td><td> Displays the name of or changes the current directory.</td></tr>
+                    <tr><td>CHKDSK</td><td> Checks a disk and displays a status report.</td></tr>
+                    <tr><td>CHKNTFS</td><td> Displays or modifies the checking of disk at boot time.</td></tr>
+                    <tr><td>CLS</td><td> Clears the screen.</td></tr>
+                    <tr><td>CMD</td><td> Starts a new instance of the Windows command interpreter.</td></tr>
+                    <tr><td>COLOR</td><td> Sets the default console foreground and background colors.</td></tr>
+                    <tr><td>COMP</td><td> Compares the contents of two files or sets of files.</td></tr>
+                    <tr><td>COMPACT</td><td> Displays or alters the compression of files on NTFS partitions.</td></tr>
+                    <tr><td>CONVERT</td><td> Converts FAT volumes to NTFS. You cannot convert the current drive.</td></tr>
+                    <tr><td>COPY</td><td> Copies one or more files to another location.</td></tr>
+                    <tr><td>DATE</td><td> Displays or sets the date.</td></tr>
+                    <tr><td>DEL</td><td> Deletes one or more files.</td></tr>
+                    <tr><td>DIR</td><td> Displays a list of files and subdirectories in a directory.</td></tr>
+                    <tr><td>DISKPART</td><td>Displays or configures Disk Partition properties.</td></tr>
+                    <tr><td>DOSKEY</td><td> Edits command lines, recalls Windows commands, and creates macros.</td></tr>
+                    <tr><td>DRIVERQUERY</td><td> Displays current device driver status and properties.</td></tr>
+                    <tr><td>ECHO</td><td> Displays messages, or turns command echoing on or off.</td></tr>
+                    <tr><td>ENDLOCAL</td><td>Ends localization of environment changes in a batch file.</td></tr>
+                    <tr><td>ERASE</td><td> Deletes one or more files.</td></tr>
+                    <tr><td>EXIT</td><td> Quits the CMD.EXE program (command interpreter).</td></tr>
+                    <tr><td>FC</td><td> Compares two files or sets of files, and displays the differences between them.</td></tr>
+                    <tr><td>FIND</td><td> Searches for a text string in a file or files.</td></tr>
+                    <tr><td>FINDSTR</td><td> Searches for strings in files.</td></tr>
+                    <tr><td>FOR</td><td> Runs a specified command for each file in a set of files.</td></tr>
+                    <tr><td>FORMAT</td><td> Formats a disk for use with Windows.</td></tr>
+                    <tr><td>FSUTIL</td><td> Displays or configures the file system properties.</td></tr>
+                    <tr><td>FTYPE</td><td> Displays or modifies file types used in file extension associations.</td></tr>
+                    <tr><td>GOTO</td><td> Directs the Windows command interpreter to a labeled line in a batch program.</td></tr>
+                    <tr><td>GPRESULT</td><td>Displays Group Policy information for machine or user.</td></tr>
+                    <tr><td>GRAFTABL</td><td>Enables Windows to display an extended character set in graphics mode.</td></tr>
+                    <tr><td>HELP</td><td> Provides Help information for Windows commands.</td></tr>
+                    <tr><td>ICACLS</td><td> Display, modify, backup, or restore ACLs for files and directories.</td></tr>
+                    <tr><td>IF</td><td> Performs conditional processing in batch programs.</td></tr>
+                    <tr><td>LABEL</td><td> Creates, changes, or deletes the volume label of a disk.</td></tr>
+                    <tr><td>MD</td><td> Creates a directory.</td></tr>
+                    <tr><td>MKDIR</td><td> Creates a directory.</td></tr>
+                    <tr><td>MKLINK</td><td> Creates Symbolic Links and Hard Links.</td></tr>
+                    <tr><td>MODE</td><td> Configures a system device.</td></tr>
+                    <tr><td>MORE</td><td> Displays output one screen at a time.</td></tr>
+                    <tr><td>MOVE</td><td> Moves one or more files from one directory to another directory.</td></tr>
+                    <tr><td>OPENFILES</td><td> Displays files opened by remote users for a file share.</td></tr>
+                    <tr><td>PATH</td><td> Displays or sets a search path for executable files.</td></tr>
+                    <tr><td>PAUSE</td><td> Suspends processing of a batch file and displays a message.</td></tr>
+                    <tr><td>POPD</td><td> Restores the previous value of the current directory saved by PUSHD.</td></tr>
+                    <tr><td>PRINT</td><td> Prints a text file.</td></tr>
+                    <tr><td>PROMPT</td><td> Changes the Windows command prompt.</td></tr>
+                    <tr><td>PUSHD</td><td> Saves the current directory then changes it.</td></tr>
+                    <tr><td>RD</td><td> Removes a directory.</td></tr>
+                    <tr><td>RECOVER</td><td> Recovers readable information from a bad or defective disk.</td></tr>
+                    <tr><td>REM</td><td> Records comments (remarks) in batch files or CONFIG.SYS.</td></tr>
+                    <tr><td>REN</td><td> Renames a file or files.</td></tr>
+                    <tr><td>RENAME</td><td> Renames a file or files.</td></tr>
+                    <tr><td>REPLACE</td><td> Replaces files.</td></tr>
+                    <tr><td>RMDIR</td><td> Removes a directory.</td></tr>
+                    <tr><td>ROBOCOPY</td><td>Advanced utility to copy files and directory trees.</td></tr>
+                    <tr><td>SET</td><td> Displays, sets, or removes Windows environment variables.</td></tr>
+                    <tr><td>SETLOCAL</td><td>Begins localization of environment changes in a batch file.</td></tr>
+                    <tr><td>SC</td><td> Displays or configures services (background processes).</td></tr>
+                    <tr><td>SCHTASKS</td><td>Schedules commands and programs to run on a computer.</td></tr>
+                    <tr><td>SHIFT</td><td> Shifts the position of replaceable parameters in batch files.</td></tr>
+                    <tr><td>SHUTDOWN</td><td>Allows proper local or remote shutdown of machine.</td></tr>
+                    <tr><td>SORT</td><td> Sorts input.</td></tr>
+                    <tr><td>START</td><td> Starts a separate window to run a specified program or command.</td></tr>
+                    <tr><td>SUBST</td><td> Associates a path with a drive letter.</td></tr>
+                    <tr><td>SYSTEMINFO</td><td> Displays machine specific properties and configuration.</td></tr>
+                    <tr><td>TASKLIST</td><td>Displays all currently running tasks including services.</td></tr>
+                    <tr><td>TASKKILL</td><td>Kill or stop a running process or application.</td></tr>
+                    <tr><td>TIME</td><td> Displays or sets the system time.</td></tr>
+                    <tr><td>TITLE</td><td> Sets the window title for a CMD.EXE session.</td></tr>
+                    <tr><td>TREE</td><td> Graphically displays the directory structure of a drive or path.</td></tr>
+                    <tr><td>TYPE</td><td> Displays the contents of a text file.</td></tr>
+                    <tr><td>VER</td><td> Displays the Windows version.</td></tr>
+                    <tr><td>VERIFY</td><td> Tells Windows whether to verify that your files are written correctly to a disk.</td></tr>
+                    <tr><td>VOL</td><td> Displays a disk volume label and serial number.</td></tr>
+                    <tr><td>XCOPY</td><td> Copies files and directory trees.</td></tr>
+                    <tr><td>WMIC</td><td> Displays WMI information inside interactive command shell.</td></tr>
+                    </tbody></table>
+
+                <br>
+                <h2>Command Help</h2>
+                <br>
+                <p>For more information on a specific command, type help + command-name</p>
+                <br>
+                <h2>Example</h2>
+                <br>
+                <code>
+                    C:\Users\myuser>help date
+                </code>
+                <br>
+                <br>
+                <code>
+                    Displays or sets the date.
+                </code>
+                <br>
+                <br>
+                <code>
+                    DATE [/T | date]
+                </code>
+                <br>
+                <br>
+                <code>
+                    Type DATE without parameters to display the current date setting and
+                    a prompt for a new one. Press ENTER to keep the same date.
+                </code>
+                <br>
+                <br>
+                <code>
+                    If Command Extensions are enabled the DATE command supports
+                    the /T switch which tells the command to just output the
+                    current date, without prompting for a new date.
+                </code>
+        </div>
+    </div>
+
+    <!-- <script>
+        let img= document.getElementById('pic');
+        let text= document.getElementById('text');
+
+        window.addEventListener('scroll',function(){
+            let value= window.scrollY;
+            pic.style.top = value *2 + 'px';
+            text.style.top =value * 2+'px';
+        })
+    </script> -->
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

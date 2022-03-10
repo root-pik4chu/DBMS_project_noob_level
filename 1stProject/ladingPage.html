@@ -1,0 +1,215 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="landingCSS.css"> -->
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            outline: none;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Space Grotesk;
+            background-color: rgb(255, 255, 255); 
+            /* background: linear-gradient(#000,rgb(132, 248, 151)); */
+            overflow: hidden;
+        }
+        .wrapper{
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+
+        }
+        header{
+            padding: 50px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 15px;
+
+        }
+        header ul li a{
+            color: rgb(41, 39, 39);
+            text-transform: uppercase;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all ease 0.5s;
+        }
+        header ul li a:hover{
+            color:rgb(108, 179, 108) ;
+
+        }
+        header ul li a.btn{
+            display: inline-block;
+            width: 180px;
+            height: 60px;
+            line-height: 60px;
+            background-color: rgb(145, 236, 236);
+            text-align: center;
+            font-size: 18px;
+            border-radius: 50px;
+            transition: all ease 0.5s;
+        }
+        header ul li a.btn:hover{
+            background-color: rgb(89, 241, 147);
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 30px 120px 0;
+        }
+        .text{
+            width: 50%;
+            padding-right: 150px;
+
+        }
+        .text p{
+            font-size: 28px;
+            line-height: 45px;
+            color: rgb(57, 70, 63);
+        }
+        .text a{
+            position: relative;
+            display: inline-block;
+            font-size: 25px;
+            text-transform: uppercase;
+            color: rgb(58, 57, 57);
+            text-decoration: none;
+            padding: 18px 30px;
+            letter-spacing: 2px;
+            font-weight: 500;
+            margin-top: 12px;
+        }
+        .text a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            background-color: rgb(157, 236, 168);
+            z-index: -1;
+            transition: all ease 0.5s;
+        }
+        .text a:hover:before{
+            width: 100%;
+
+        }
+        .content img{
+            position: absolute;
+            /* top: 0; */
+            /* left:0; */
+            /* width: 100%; */
+            /* height: 100%; */
+            /* object-fit: cover; */
+        }   
+        .img{
+            position: relative;
+            width: 200px;
+            height: 500px;
+            /* background: radial-gradient(520px, rgb(143, 236, 143),transparent 50%); */
+            margin-top : -50px;
+            /* mix-blend-mode: screen; */
+        }
+        .text p span{
+            color: rgb(89 228 167);
+        }
+        .text h1 span{
+            color: rgb(89 228 167);
+        }
+        h1{
+            width: 0ch;
+            font-weight: 300;
+            font-size: 50px;    
+            overflow: hidden; 
+            white-space: nowrap;
+            animation: text 8s steps(22) infinite alternate; /* animation */
+            border-right: 3px solid black;
+        }
+        @keyframes text{
+            0%{
+                width: 0ch;
+            }
+            50%{
+                width: 21ch;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">home</a></li>
+                <li><a class="btn" href="#" >login</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="text">
+            <h1><span><u>Command</u> <u> line</u> <u> Interface</u></span></h1>
+            <p>
+                Abbreviated as CLI, a <span>Command Line Interface</span> connects a user to a computer program or operating system. Through the CLI, users interact with a system or application by typing in text<span> (commands)</span>. 
+                <span>
+                    login for detail info...
+                </span>
+            </p>
+            <a href="http://192.168.45.200:7882/Site/New%20Design%20Project_1/index_1.html" class="btn">Log in</a>
+        </div>
+    
+        <div class="img">
+            <div class="social-icon">
+                <img src="i1.png" alt="">
+                <img src="fb.png" alt="">
+                <img src="wh1.png" alt="">
+                <img src="red.png" alt="">
+                <img src="mes.png" alt="">
+                
+
+            </div>
+            <img src="12.jpg" alt="" id="pic">
+            
+            
+        </div>
+        <div class="wave"></div>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
